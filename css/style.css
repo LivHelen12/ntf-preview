@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto&display=swap');
+
+:root {
+  /*
+  * Colors
+  */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-dark-blue: hsl(217, 54%, 11%);
+  --card-dark-blue: hsl(216, 50%, 16%);
+  --line-dark-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /*
+  * Font-family
+  */
+  --font-family: 'Outfit', sans-serif;
+
+  /*
+  * Font-size
+  */
+
+  --font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-dark-blue);
+  font-family: var(--font-family);
+  color: var(--white);
+  font-size: var(--font-size);
+  font-white: 300;
+  line-height: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 1440px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  background-color: var(--card-dark-blue);
+  width: min(87.5%, 22rem);
+  margin: 9.5rem auto;
+  border-radius: 16px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+}
+
+.card-container > .nft-image {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+}
+
+.info-container > .text {
+  margin: 1rem 0;
+}
+
+.info-container > .text > h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.info-container > .text > p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--soft-blue);
+}
+
+.eth-info {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.value-info, .days-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.value-info > span {
+  color: var(--cyan);
+}
+
+.days-info > span {
+  color: var(--soft-blue);
+}
+
+.value-info, .days-info {
+  font-size: 14px;
+}
+
+.creator-info {
+  border-top: 1px solid var(--line-dark-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
+.creator-info > .avatar {
+  border-radius: 50%;
+  width: 2rem;
+  height: auto;
+  margin-right: 1rem;
+  border: 1px solid var(--soft-blue);
+}
+
+.creator-info > p {
+  color: var(--soft-blue);
+}
+
+.creator-info > p > span {
+  color: var(--white);
+}
